@@ -1,0 +1,51 @@
+{
+  "editor.tabSize" : 2,
+  "cSpell.language" : "en,en-US",
+  "terminal.integrated.enableMultiLinePasteWarning" : false,
+  "editor.renderControlCharacters" : true,
+  "[markdown]" : {
+    "editor.quickSuggestions" : {
+      "strings" : "off",
+      "other" : "off",
+      "comments" : "off"
+    },
+    "editor.wordWrap" : "off"
+  },
+  "workbench.iconTheme" : "material-icon-theme",
+  "git.enableSmartCommit" : true,
+  "npm.enableRunFromFolder" : true,
+  "editor.accessibilitySupport" : "off",
+  "explorer.confirmDelete" : false,
+  "workbench.colorCustomizations" : {
+    "terminal.ansiBrightCyan" : "#2b7489",
+    "editor.lineHighlightBackground" : "#1073cf2d",
+    "terminal.ansiGreen" : "#56d364",
+    "terminal.ansiBrightYellow" : "#e3b341",
+    "terminal.ansiBrightRed" : "#f78166",
+    "terminal.ansiMagenta" : "#db61a2",
+    "terminal.ansiBlue" : "#6ca4f8",
+    "terminal.ansiCyan" : "#2b7489",
+    "terminal.ansiYellow" : "#e3b341",
+    "terminal.ansiBrightWhite" : "#ffffff",
+    "terminal.ansiBlack" : "#000000",
+    "terminal.ansiBrightMagenta" : "#db61a2",
+    "editor.lineHighlightBorder" : "#9fced11f",
+    "terminal.ansiBrightBlue" : "#6ca4f8",
+    "terminal.ansiWhite" : "#ffffff",
+    "terminal.ansiRed" : "#f78166",
+    "terminal.ansiBrightGreen" : "#56d364",
+    "terminal.ansiBrightBlack" : "#4c4c4c"
+  },
+  "git.confirmSync" : false,
+  "editor.inlineSuggest.enabled" : true,
+  "workbench.startupEditor" : "newUntitledFile",
+  "github.copilot.enable" : {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "git.autofetch" : true,
+  "terminal.integrated.rightClickCopyPaste" : true
+}
