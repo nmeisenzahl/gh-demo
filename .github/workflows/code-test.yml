@@ -34,8 +34,8 @@ jobs:
       with:
         languages: go
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    - name: Build app
+      run: go build -v ./...
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
