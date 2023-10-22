@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Issue greeting
-        uses: actions/github-script@v6.4.0
+        uses: actions/github-script@v6.4.1
         with:
           script: |
             github.rest.issues.createComment({
@@ -25,7 +25,7 @@ jobs:
             })
 
       - name: Label issue
-        uses: actions/github-script@v6.4.0
+        uses: actions/github-script@v6.4.1
         with:
           script: |
             github.rest.issues.addLabels({
