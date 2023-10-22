@@ -32,9 +32,4 @@ resource "azurerm_container_app" "app" {
       memory = "0.5Gi"
     }
   }
-
-  secret {
-    name = "REDIS_ACCESS_KEY"
-    value = "072CEjEl0npD1IOU3FZ1wN5pvy9J2w7YuAzCaFupliW="
-  }
 }
