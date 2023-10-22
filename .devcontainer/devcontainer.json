@@ -16,18 +16,23 @@
 		},
 		"ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:2": {
 			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.21"
 		}
 	
 	},
 	"customizations": {
     "vscode": {
       "extensions": [
-				"GitHub.copilot", 
-				"GitHub.copilot-labs", 
-				"GitHub.copilot-chat",
-				"hashicorp.terraform",
-				"PKief.material-icon-theme"
-			]
+		"GitHub.copilot",
+		"GitHub.copilot-labs",
+		"GitHub.copilot-chat",
+		"hashicorp.terraform",
+		"PKief.material-icon-theme",
+		"golang.go",
+		"GitHub.vscode-pull-request-github"
+	]
     }
 	}	
 
