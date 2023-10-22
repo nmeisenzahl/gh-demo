@@ -7,18 +7,12 @@ version: 2
 updates:
   # Github Actions
   - package-ecosystem: "github-actions" 
-    directory: ".github"
+    directory: "/.github"
     schedule:
       interval: "daily"
 
   # Terraform Providers
   - package-ecosystem: "terraform"
-    directory: "src/infra"
-    schedule:
-      interval: "daily"
-
-  # NPM packages
-  - package-ecosystem: "npm" 
-    directory: "src/api"
+    directory: "/src"
     schedule:
       interval: "daily"

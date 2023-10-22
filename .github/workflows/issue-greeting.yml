@@ -1,0 +1,33 @@
+name: Issue greeting
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  issue_greeting:
+    name: Issue greeting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Issue greeting
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Hi 👋! Thanks for submitting this issue. We will take of it in a bit.'
+            })
+
+      - name: Label issue
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['New issue 🆕']
+            })
