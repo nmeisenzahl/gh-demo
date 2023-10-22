@@ -5,6 +5,8 @@ on:
   pull_request:
     branches:
       - "main"
+    paths:
+      - "src/infra/**"
 
 permissions:
   id-token: write
@@ -13,7 +15,7 @@ permissions:
 
 defaults:
   run:
-    working-directory: /src
+    working-directory: /src/infra
     shell: bash
 
 jobs:
