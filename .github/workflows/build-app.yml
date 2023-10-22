@@ -10,7 +10,7 @@ on:
 
 defaults:
   run:
-    working-directory: /src/app
+    working-directory: src/app
     shell: bash
 
 jobs:
