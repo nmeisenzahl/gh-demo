@@ -21,10 +21,6 @@ defaults:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: src
     env:
       ARM_CLIENT_ID: '1405fd4f-f9e7-4076-b1cb-6237b7b115ae'
       ARM_SUBSCRIPTION_ID: 'a45decf8-969d-439e-84e9-3bc90242b8fc'
