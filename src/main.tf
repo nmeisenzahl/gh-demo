@@ -33,8 +33,8 @@ resource "azurerm_container_app" "app" {
     }
   }
 
-  # secret {
-  #   name = "REDIS_CONNECTION_STRING"
-  #   value = "test123-redis.redis.cache.windows.net:6380,password=072CEjEl0npD1IOU3FZ1wN5pvy9J2w7YuAzCaFupliW=,ssl=True,abortConnect=False"
-  # }
+  secret {
+    name = "REDIS_ACCESS_KEY"
+    value = "072CEjEl0npD1IOU3FZ1wN5pvy9J2w7YuAzCaFupliW="
+  }
 }
