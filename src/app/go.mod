@@ -1,6 +1,6 @@
 module github.ciom/nmeisenzahl/gh-demo/app
 
-go 1.21.2
+go 1.21
 
 require github.com/gin-gonic/gin v1.9.1
 
