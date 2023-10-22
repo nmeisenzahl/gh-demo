@@ -30,6 +30,15 @@ resource "azurerm_container_app" "app" {
       image  = "mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"
       cpu    = 0.25
       memory = "0.5Gi"
+      env {
+        name        = "REDIS_ACCESS_KEY"
+        secret_name = "redis-access-key"
+      }
     }
+  }
+
+  secret {
+    name  = "redis-access-key"
+    value = azurerm_redis_cache.demo.primary_access_key
   }
 }
