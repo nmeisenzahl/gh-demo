@@ -1,9 +1,9 @@
 variable "locations" {
-  type = string
+  type    = string
   default = "westeurope"
 }
 
 variable "prefix" {
-  type = string
+  type    = string
   default = "gh-demo"
 }
